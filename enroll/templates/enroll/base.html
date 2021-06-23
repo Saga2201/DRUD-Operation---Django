@@ -1,0 +1,33 @@
+<!doctype html>
+{% load static %}
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CRUD - SAGAR</title> <!-- TODO: update page title -->
+    <meta name="description" content=""> <!-- TODO: update meta description -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Home - Page"> <!-- TODO: update OG Title --> 
+    <meta property="og:url" content="">  <!-- TODO: update OG URL --> 
+    <meta property="og:image" content="/path/to/image">  <!-- TODO: update OG Image --> 
+    <meta property="og:type" content="">
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="manifest" href="site.webmanifest"> <!-- TODO: Update web app manifest file -->
+    <link rel="icon" href="/favicon.ico"> <!-- TODO: Add favicon.ico file to project -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{% static 'enroll/css/bootstrap.css' %}">
+    <meta name="theme-color" content="#fafafa">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center alert alert-danger">Function Based View ModelForm CRUD Project</h2>
+        {% block content %}
+        
+        {% endblock content %}
+    </div>
+
+<script src="{% static 'enroll/js/jquery.js' %}"></script>
+<script src="{% static 'enroll/js/popper.js' %}"></script>
+<script src="{% static 'enroll/js/bootstrap.js' %}"></script>
+</body>
+</html>
